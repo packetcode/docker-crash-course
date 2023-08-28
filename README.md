@@ -29,30 +29,30 @@
         1. Lists the running  containers
             1. docker ps -a
             2. Lists all the running as well as stopped containers
-    2. docker pull <Image Name>
+    2. docker pull \<Image Name\>
         1. Pulls/Downloads an image to system
-    3. docker start <Container Id>
+    3. docker start \<Container Id\>
         1. Starts an existing docker container
-    4. docker run <Image Name>
+    4. docker run \<Image Name\>
         1. Pulls and starts the container
-            1. docker run -d <Image Name>
+            1. docker run -d \<Image Name\>
                 1. Run the container in detached mode
         2. docker run redis:4.0
         3. docker run —name redis redis:4.0
-    5. docker stop <Container Id>
+    5. docker stop \<Container Id\>
         1. Stops a running container
     6. docker run -p5400:6379 redis
-        1. docker run -p<Host port>:<Container Source Port> <Image Name>
+        1. docker run -p\<Host port\>:\<Container Source Port\> \<Image Name\>
     7. docker images
 11. Debugging inside container
-    1. docker logs <container Id>
-    2. docker exec -it <Container Id> /bin/bash
-12. Docker File
+    1. docker logs \<Container Id\>
+    2. docker exec -it \<Container Id\> /bin/bash
+12. Docker File commands
     1. FROM
     2. COPY
     3. WORKDIR
     4. RUN
     5. CMD
     6. .dockerignore
-    7. docker build -t <Image Name> .
+    7. docker build -t \<Image Name\> .
     
