@@ -56,3 +56,12 @@
     6. .dockerignore
     7. docker build -t \<Image Name\> .
     
+
+---
+
+### Commands to run the application
+
+```
+docker build -t angular-app:1.0 .
+docker run -d -p 8888:80 --name=angular-app angular-app:1.0
+```
